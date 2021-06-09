@@ -68,6 +68,9 @@ img{
 }
 .header .logo{
     display: block;
+    text-indent:101%; 
+    overflow:hidden;
+    white-space:nowrap;
     background: url('https://fakeimg.pl/250x250/?text=250X250');
     width: 250px;
     height: 250px;
@@ -79,7 +82,7 @@ img{
     flex-wrap: wrap;
 }
 
-.header a{
+.header li a{
     background-color: antiquewhite;
     text-align: center;
     display: block;
@@ -94,14 +97,17 @@ img{
 .content{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-}
+}   
 
 .news{
     width: 75%;
     border: 2px solid;
     padding: 20px;
     font: 16px/24px arial;
+}
+
+.news p{
+    margin: 15px 0px;
 }
 
 .photo{
@@ -134,31 +140,25 @@ img{
     .header ul{
         margin-top: 20px;
         width: 50%;
-        flex-wrap: wrap;
     }
     .header li{
         margin-top: 10px;
         width: 50%;
-        flex-wrap: wrap;
     }
     .content{
-        flex-direction: column;
-        align-items: center;
+        flex-flow: wrap;
+        justify-content: center;
     }
     .news{
         width: 95%;
-        margin: 0px 20px 20px;
+        margin-bottom: 20px;
     }
     .photo{
         width: 95%;
-        margin: 0px 20px 20px;
+        margin-bottom: 20px;
         flex-direction: column;
         align-items: center;
 
-    }
-    .photo img{
-        width: 300px;
-        height: 225px;
     }
 
 }
